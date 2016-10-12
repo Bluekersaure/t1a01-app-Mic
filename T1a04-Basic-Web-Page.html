@@ -1,1 +1,87 @@
-file:///H:/Documents/Game%20Dev%202016%20-%20Michael/Basic-Input.html
+basic-webpage.html
+
+
+
+<h1 align=center>Basic web page by Michael.B</h1>
+
+
+
+
+This is a web page<br>
+
+
+
+<div id="myQuestion" >?</div>
+
+<input type=button value="click me" onclick="{
+   
+document.getElementById('myQuestion').innerHTML = 'Hello World'
+}">
+<br>
+
+
+
+
+
+
+My picture<img src="http://www.pcinvasion.com/wp-content/uploads/2016/04/dark-souls-3.jpg" width=400><br>
+
+Image from the web <img width=400 src="http://vignette3.wikia.nocookie.net/powerlisting/images/b/b9/BADASS.png/revision/latest?cb=20140502110832"><br>
+
+
+
+<a href="http://www.google.ca">http://www.google.ca</a><br>
+
+
+This is <b>bold</b> this is <i>italic</i>. This is both <br>
+
+
+<table border=1>
+
+ 
+ <tr><td>Jill</td><td>Smith</td><td>50</td></tr>
+
+ 
+ <tr><td>Eve</td><td>Jackson</td><td>94</td></tr>
+
+
+</table><br>
+
+
+Here is a list of my fav 5 foods
+
+<ul>
+  
+ <li> Pizza
+  
+ <li> KD
+  
+ <li> Mashed potatoes
+ <li> Chocolate
+ <li> Candy
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+<div id="myDiv01" style="position:relative;left:0;top:0;">Wow</div>
+
+
+<input type=button value="Go Right" onclick="{
+  
+ my01 = document.getElementById('myDiv01')
+  
+ my01.style.left = parseInt(my01.style.left ) + 20 + 'px'
+
+
+
+}">
+
