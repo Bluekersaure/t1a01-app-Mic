@@ -1,0 +1,57 @@
+<html>
+ 
+ <body bgcolor="Neon Black">
+ <font color=Violent>
+
+<body onkeypress="{
+  document.getElementById('myOut').innerHTML =
+  String.fromCharCode(event.keycode) + ' = ' + event.keycode
+  
+  }">
+
+<h1 align=center> Events by Michael</h1>
+
+This <b onClick="{
+ //alert('Hey there!')
+}"> is Bold </b> not this.<br><br><br><br>
+
+  <input type=text value=Michael id="myText1" onselect="{
+   document.getElementById9'myOut').innerHTML = 
+   document.all.myText1.value
+   }">
+   
+  <div id="myOut1">Output goes here</div>
+  
+ <br>
+ 
+ <img onmouseover="{
+ //alert('Cool Space Image')
+ }"
+ src="http://cdni.wired.co.uk/1240x826/s_v/space_11.jpg" alt="Smiley">
+ <br>
+ 
+ <img onmouseout="{
+ //alert('COOLER Space Image')
+ }" src="http://www.unoosa.org/res/timeline/index_html/space-2.jpg" alt="Smiley">
+ <br>
+ 
+ <b ondblclick="{
+ alert('Hey thats pretty good!') }" 
+ >Double-click me for surprise!</p>
+ 
+ <img onmouseenter=
+ "{
+ //alert('The Witcher 3')
+ }" 
+ src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" 
+ alt="Smiley">
+ 
+ <br>
+ 
+ <input type=
+ text
+ onkeypress="{
+ alert('Do not press me!') }">
+ 
+     
+ <body>
