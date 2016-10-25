@@ -24,12 +24,14 @@ This <b onClick="{
   
  <br>
  
+ OnMouseOver <br>
  <img onmouseover="{
  //alert('Cool Space Image')
  }"
  src="http://cdni.wired.co.uk/1240x826/s_v/space_11.jpg" alt="Smiley">
  <br>
  
+ OnMouseOut<br>
  <img onmouseout="{
  //alert('COOLER Space Image')
  }" src="http://www.unoosa.org/res/timeline/index_html/space-2.jpg" alt="Smiley">
@@ -39,19 +41,21 @@ This <b onClick="{
  alert('Hey thats pretty good!') }" 
  >Double-click me for surprise!</p>
  
+ OnMouseEnter<br>
  <img onmouseenter=
  "{
- //alert('The Witcher 3')
+ document.getElementById('div1').innerHTML='The Witcher 3: Wild Hunt'
  }" 
  src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" 
  alt="Smiley">
  
  <br>
  
+ OnKeyPress<br>
  <input type=
  text
  onkeypress="{
- alert('Do not press me!') }">
+   document.getElementById('div1').innerHTML='Do not press me!'
+  }">
  
-     
- <body>
+<body> 
