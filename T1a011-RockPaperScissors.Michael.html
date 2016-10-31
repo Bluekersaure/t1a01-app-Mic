@@ -1,26 +1,146 @@
 <html> 
 
- <body bgcolor="Purple">
+ <body bgcolor="rose">
  <font color="Green"> 
     
-</body>
-<body onkeypress="{
-  document.getElementById('myOut').innerHTML =
-  String.fromCharCode(event.keycode) + ' = ' + event.keycode
-  
-  }">
+<h1 align=center>Rock, Paper, Scissors by Michael</h1>
+<script>
+    document.myTotalAttempts = 0
+    document.myTotalWins = 0
+    document.myTotalLosses = 0
+    document.myTotalTies = 0
+</script>
+
+Attempts: <input type=text id="myAttempts" value=0>
+<br>
+Wins: <input type=text id="myWins" value=0>
+<br>
+Losses: <input type=text id="myLosses" value=0>
+<br>
+Ties: <input type=text id="myTies" value=0>
+<br><br>
+
+Is Rock<br><input b style="font-size:40px" ></b> <type=button value="Rock" ></b> <onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   document.myTotalAttempts += 1
+   
+    if (document.myRandom == 1){
+            document.myOutcome = 'Win'
+                document.myTotalWins += 1
+    }
     
-    This <onClick="{
- alert('You Win!')
-}">is Rock<br>
-<input type=button value=Rock><br>
+    if (document.myRandom == 2){
+        document.myOutcome = 'Lose'
+            document.myTotalLosses += 1
+    }    
+    
+    if (document.myRandom == 3) {
+        document.myOutcome = 'Tie' 
+            document.myTotalTies += 1
+    }
 
- This <onClick="{
- alert('You Win!')
-}">is Paper<br>
-<input type=button value=Paper><br>
+    document.getElementById('myOut').innerHTML = 'Rock ' + document.myOutcome
+       document.all.myAttempts.value = document.myTotalAttempts
+       document.all.myWins.value = document.myTotalWins
+       document.all.myLosses.value = document.myTotalLosses
+       document.all.myTies.value = document.myTotalTies
+       
+   if ((document.myTotalWins == 2) && (document.myTotalAttempts >= 2)){
+       alert ('You Win!')
+    }
+   
+    if ((document.myTotalLosses == 2) && (document.myTotalAttempts >= 2)){
+       alert ('You Lose')
+    }
+   
+    }"><br>
+   
+Is Paper<br><input b style="font-size:40px" type=button value="Paper" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   document.myTotalAttempts += 1
+   
+    if (document.myRandom == 1){
+        document.myOutcome = 'Win'
+            document.myTotalWins += 1
+    }
+   
+    if (document.myRandom == 2){
+        document.myOutcome = 'Lose'
+            document.myTotalLosses += 1
+    }        
+        
+    if (document.myRandom == 3){
+        document.myOutcome = 'Tie' 
+            document.myTotalTies += 1    
+    } 
+    
+    document.getElementById('myOut').innerHTML = 'Paper ' + document.myOutcome
+    document.all.myAttempts.value = document.myTotalAttempts
+    document.all.myWins.value = document.myTotalWins
+    document.all.myLosses.value = document.myTotalLosses
+    document.all.myTies.value = document.myTotalTies 
+    
+     if ((document.myTotalWins == 2) && (document.myTotalAttempts >= 2)){
+       alert ('You Win!')
+    }
+   
+    if ((document.myTotalLosses == 2) && (document.myTotalAttempts >= 2)){
+       alert ('You Lose')
+    }
+    
+    }"><br>
+       
+Is Scissors<br><input b style="font-size:40px" type=button value="Scissors" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   document.myTotalAttempts += 1
+   
+    if (document.myRandom == 1){
+        document.myOutcome = 'Win'
+            document.myTotalWins += 1
+    }
 
- This <onClick="{
- alert('You Win!')
-}">is Scissors<br>
-<input type=button value=Scissors><br>
+    if (document.myRandom == 2){
+        document.myOutcome = 'Lose'
+            document.myTotalLosses += 1
+    }      
+
+    if (document.myRandom == 3){
+        document.myOutcome = 'Tie' 
+            document.myTotalTies += 1
+    } 
+    
+    document.getElementById('myOut').innerHTML = 'Scissors ' + document.myOutcome
+    document.all.myAttempts.value = document.myTotalAttempts
+    document.all.myWins.value = document.myTotalWins
+    document.all.myLosses.value = document.myTotalLosses
+    document.all.myTies.value = document.myTotalTies
+    
+     if ((document.myTotalWins == 2) && (document.myTotalAttempts >= 2)){
+       alert ('You Win!')
+    }
+   
+    else {
+       alert ('You Lose')
+    }
+    
+    }"><br>
+
+<br>
+
+<div id="myOut">Output here</div>
+
+
+
+
+
+
+<b style="font-size:40px"></b>
+
+
+
+
+
+</body>
