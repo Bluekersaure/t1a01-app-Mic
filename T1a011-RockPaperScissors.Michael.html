@@ -20,7 +20,7 @@ Losses: <input type=text id="myLosses" value=0>
 Ties: <input type=text id="myTies" value=0>
 <br><br>
 
-Is Rock<br><input b style="font-size:40px" ></b> <type=button value="Rock" ></b> <onclick="{
+Is Rock<br><input  style="font-size:40px; font-weight: bold" type=button value="Rock" onclick="{
    document.myOutcome = ''
    document.myRandom = Math.floor(Math.random()*3)+1 
    document.myTotalAttempts += 1
@@ -41,12 +41,12 @@ Is Rock<br><input b style="font-size:40px" ></b> <type=button value="Rock" ></b>
     }
 
     document.getElementById('myOut').innerHTML = 'Rock ' + document.myOutcome
-       document.all.myAttempts.value = document.myTotalAttempts
-       document.all.myWins.value = document.myTotalWins
-       document.all.myLosses.value = document.myTotalLosses
-       document.all.myTies.value = document.myTotalTies
+    document.all.myAttempts.value = document.myTotalAttempts
+    document.all.myWins.value = document.myTotalWins
+    document.all.myLosses.value = document.myTotalLosses
+    document.all.myTies.value = document.myTotalTies
        
-   if ((document.myTotalWins == 2) && (document.myTotalAttempts >= 2)){
+    if ((document.myTotalWins == 2) && (document.myTotalAttempts >= 2)){
        alert ('You Win!')
     }
    
@@ -56,7 +56,7 @@ Is Rock<br><input b style="font-size:40px" ></b> <type=button value="Rock" ></b>
    
     }"><br>
    
-Is Paper<br><input b style="font-size:40px" type=button value="Paper" onclick="{
+Is Paper<br><input style="font-size:40px; font-weight: bold" type=button value="Paper" onclick="{
    document.myOutcome = ''
    document.myRandom = Math.floor(Math.random()*3)+1 
    document.myTotalAttempts += 1
@@ -92,7 +92,7 @@ Is Paper<br><input b style="font-size:40px" type=button value="Paper" onclick="{
     
     }"><br>
        
-Is Scissors<br><input b style="font-size:40px" type=button value="Scissors" onclick="{
+Is Scissors<br><input style="font-size:40px; font-weight: bold" type=button value="Scissors" onclick="{
    document.myOutcome = ''
    document.myRandom = Math.floor(Math.random()*3)+1 
    document.myTotalAttempts += 1
@@ -132,12 +132,6 @@ Is Scissors<br><input b style="font-size:40px" type=button value="Scissors" oncl
 
 <div id="myOut">Output here</div>
 
-
-
-
-
-
-<b style="font-size:40px"></b>
 
 
 
