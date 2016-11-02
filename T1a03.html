@@ -1,0 +1,25 @@
+<html>
+
+<h1 align=center>T1a03-color by Michael </h1>
+<input id="myInput" type=text value="10"> <br><br>
+
+
+<input type=button value="Loop Add" onclick="{
+  myOut = document.getElementById('myArea')
+  myIn  = document.getElementById('myInput')
+  myOut.innerHTML = ''
+
+  for (myCount = 1; myCount <= myIn.value; myCount++){
+    if (myCount == 2 ){
+      myOut.innerHTML +='<font color=Blue>' + myCount + '</font></br>'
+    } 
+  }
+}"> <br><br>
+
+<input type=button value="Show Div after clicking Loop Add" onclick="{  
+   document.getElementById('myOut.innerHTML')alert(myOut.innerHTML)
+}">
+
+<div id="myArea" > Your output  will  go here <br></div> <br>
+
+</html>
